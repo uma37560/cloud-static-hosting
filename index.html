@@ -5,27 +5,31 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>My Cloud Project Website</title>
 
-<!-- Link CSS file -->
 <link rel="stylesheet" href="style.css">
-
 </head>
+
 <body>
 
 <header>
-  <h1>🚀 Welcome to My Cloud Internship Project</h1>
+  <h1 id="mainHeading">🚀 Welcome to My Cloud Internship Project</h1>
   <p>GitHub Pages | Cloud Deploy | Beginner Friendly Project</p>
 </header>
 
 <section class="buttons">
   <button onclick="showMessage()">Click Me 👋</button>
   <button onclick="window.location.href='https://github.com'">Visit GitHub</button>
+  <button onclick="changeText()">Change Title ✨</button>
+  <button onclick="showDateTime()">Show Time ⏱️</button>
+  <button onclick="changeColor()">Change Background 🎨</button>
 </section>
+
+<p id="dateBox" style="text-align:center; font-weight:bold; margin-top:10px;"></p>
 
 <section class="content">
   <h2>About This Website</h2>
   <p>
     This website is hosted using <b>GitHub Pages</b> as part of my cloud computing internship project.
-    I learned how to deploy static websites and use version control.
+    It demonstrates cloud deployment and interactive web design.
   </p>
 
   <h2>Technologies Used</h2>
@@ -41,11 +45,7 @@
   Built for Cloud Internship Learning 🚀
 </footer>
 
-<script>
-function showMessage() {
-  alert("Hello! Thanks for visiting my cloud project 😊");
-}
-</script>
-
+<script src="script.js"></script>
 </body>
 </html>
+
